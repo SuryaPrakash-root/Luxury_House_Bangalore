@@ -53,7 +53,11 @@ Jupyter notebook containing:
 - Data type conversions and cleaning
 - Missing value handling
 - Data validation and quality checks
+- Missing value handling
+- Data validation and quality checks
 - Preprocessing for analysis
+- **Machine Learning**: Random Forest Regressor implementation
+- **Hyperparameter Tuning**: GridSearchCV for model optimization
 
 ### Luxury_Housing_Bangalore.csv
 Raw dataset containing approximately 4000+ luxury property transactions in Bangalore with 15+ features.
@@ -79,6 +83,7 @@ Detailed analysis report containing:
 - **Python**: Data analysis and manipulation
 - **Pandas**: Data cleaning and transformation
 - **NumPy**: Numerical computations
+- **Scikit-learn**: Machine Learning and metrics
 - **Jupyter Notebook**: Interactive analysis environment
 - **Data Visualization**: Insights representation
 
@@ -127,6 +132,24 @@ The notebook includes:
 - Outlier detection and treatment
 - Feature engineering for enhanced analysis
 
+## Machine Learning Implementation
+
+The project now includes a Machine Learning pipeline to predict `Ticket_Price_Cr`.
+
+### Algorithm
+- **Random Forest Regressor**: Selected for its robustness and ability to handle non-linear relationships.
+
+### Steps
+1.  **Preprocessing**: 
+    -   One-Hot Encoding for categorical variables.
+    -   StandardScaler for numerical features.
+2.  **Training**: 80-20 Train-Test split.
+3.  **Hyperparameter Tuning**: `GridSearchCV` used to optimize:
+    -   `n_estimators`
+    -   `max_depth`
+    -   `min_samples_split`
+4.  **Evaluation**: Metrics included **RMSE** (Root Mean Squared Error) and **R2 Score**.
+
 ## Analysis Features
 
 - **Exploratory Data Analysis**: Understanding data distribution and relationships
@@ -134,6 +157,8 @@ The notebook includes:
 - **Market Segmentation**: Grouping properties by micro-market, configuration, and price range
 - **Trend Analysis**: Price and volume trends over time
 - **Buyer Behavior Analysis**: Understanding NRI vs Local buyer preferences
+- **Predictive Modeling**: Random Forest Regressor to predict property prices
+- **Hyperparameter Optimization**: Automated tuning of model parameters for best performance
 
 ## Key Findings
 
@@ -145,7 +170,7 @@ The notebook includes:
 
 ## Future Enhancements
 
-- Develop predictive models for property price estimation
+- Develop predictive models for property price estimation (Implemented)
 - Create interactive visualizations and dashboards
 - Implement machine learning models for buyer preference prediction
 - Expand analysis to include more temporal data
